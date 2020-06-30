@@ -22,6 +22,10 @@ $(document).ready(function () {
           text: dados.mensagem,
           type: dados.tipo,
           confirmButtonText: "OK",
+        }).then((result) => {
+          if (result.value) {
+            $("#conteudo").load("src/categorias/visao/list-categoria.html");
+          }
         });
 
         $("#modal-categoria").modal("hide");
