@@ -1,20 +1,21 @@
-$(document).ready(function() {
-    $('.btn-new').click(function(e) {
-        e.preventDefault()
+$(document).ready(function () {
+  $(".btn-new").click(function (e) {
+    e.preventDefault();
 
-        $('.modal-title').empty()
-        $('.modal-body').empty()
+    $(".modal-title").empty();
+    $(".modal-body").empty();
 
-        $('.modal-title').append('Adicionar nova categoria')
+    $(".modal-title").append("Adicionar nova categoria");
 
-        const datacriacao = new Date().toLocaleString()
+    const datacriacao = new Date().toLocaleString();
 
-        $('.modal-body').load('src/categorias/visao/form-categoria.html', function() {
-            $('#dataagora').val(datacriacao)
-        })
+    $(".modal-body").load("src/categorias/visao/form-categoria.html", function () {
+      $("#dataagora").val(datacriacao);
+    });
 
-        $('.btn-save').show()
+    $(".btn-update").hide();
+    $(".btn-save").show();
 
-        $('#modal-categoria').modal('show')
-    })
-})
+    $("#modal-categoria").modal("show");
+  });
+});
