@@ -1,0 +1,27 @@
+<form id="form-cliente">
+  <div class="form-group">
+    <label>Nome do cliente</label>
+    <input type="text" name="nome" id="nome" class="form-control" />
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Email do cliente</label>
+      <input type="email" name="email" id="email" class="form-control" />
+    </div>
+    <div class="form-group col-md-6">
+      <label>Telefone do cliente</label>
+      <input type="tel" name="tel" id="tel" class="form-control" />
+    </div>
+  </div>
+  <div class="form-group row align-items-end">
+    <div class="col-12 col-md-9">
+      <label>Data de Criação</label>
+      <input type="datetime" name="dataagora" id="dataagora" readonly class="form-control" />
+    </div>
+    <div class="col-12 col-md-3">
+      <input type="checkbox" class="form-check-input" checked id="ativo" name="ativo" />
+      <label class="form-check-label" for="exampleCheck1">Ativo</label>
+    </div>
+  </div>
+  <input type="hidden" name="idcliente" id="idcliente" />
+</form>
