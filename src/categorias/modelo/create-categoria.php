@@ -42,4 +42,4 @@ if (!$conexao) {
     mysqli_close($conexao); //Fechando a conexão com o banco
 }
 
-echo json_encode($dados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+echo utf8_decode(json_encode($dados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));

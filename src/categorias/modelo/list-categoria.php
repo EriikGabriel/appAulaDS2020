@@ -52,4 +52,4 @@ if ($conexao) {
     );
 }
 
-echo json_encode($json_data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+echo utf8_decode(json_encode($json_data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));

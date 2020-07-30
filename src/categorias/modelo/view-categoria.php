@@ -26,4 +26,4 @@ if ($conexao) {
     $dados = array("tipo" => "info", "mensagem" => "Não possível conecar ao banco de dados", "dados" => array());
 }
 
-echo json_encode($dados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+echo utf8_decode(json_encode($dados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
